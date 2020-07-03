@@ -123,7 +123,7 @@
       var text = $option.data('display') || $option.text();
       $dropdown.find('.current').text(text);
       
-      $dropdown.prev('select').val($option.data('value')).trigger('change');
+      $dropdown.prev('select').val($option.data('value').toString()).trigger('change');
     });
 
     // Keyboard events
